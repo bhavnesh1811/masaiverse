@@ -1,0 +1,76 @@
+/* Base styles for the header */
+.header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    margin-bottom: 2rem;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .navbar_left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 2rem;
+    justify-content: left;
+  }
+  
+  .navbar_middle {
+    display: inline-flex;
+  }
+  
+  .navbar_right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar_right button {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .navbar_middle > ul {
+    display: flex;
+    gap: 5rem;
+    margin-right: 14rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive styles for screens with a max-width of 768px (tablet) */
+  @media screen and (max-width: 768px) {
+    .navbar_middle > ul {
+      margin-right: 4rem;
+    }
+  }
+  
+  /* Responsive styles for screens with a max-width of 480px (mobile) */
+  @media screen and (max-width: 480px) {
+    .navbar_list {
+      display: none;
+    }
+  
+    .navbar_button {
+      display: none;
+    }
+  
+    .navbar_middle > ul {
+      margin-right: 0;
+      gap: 2rem; /* Adjust spacing for smaller screens */
+    }
+  
+    .navbar_right {
+      flex-direction: column; /* Stack items vertically in mobile view */
+      align-items: flex-end;
+    }
+  
+    .navbar_right button {
+      margin: 0.5rem 0;
+    }
+  }

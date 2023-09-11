@@ -41,8 +41,8 @@ const Curriculum = () => {
                 <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/course-image5.webp" alt="" />
             </div>
         </div>
-        <div className={styles.button}>
-            <button >GET YOUR DREAM JOB</button>
+        <div className={styles.button} style={{margin:"20px auto"}}>
+            <button>GET YOUR DREAM JOB</button>
         </div>
     </div>
   )
