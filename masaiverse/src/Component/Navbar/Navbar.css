@@ -1,3 +1,4 @@
+/* Base styles for the header */
 .header {
   height: 10vh;
   display: flex;
@@ -22,14 +23,17 @@
 .navbar_middle {
   display: inline-flex;
 }
+
 .navbar_right {
   display: flex;
   justify-content: flex-end;
 }
+
 .navbar_right button {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 .navbar_middle > ul {
   display: flex;
   gap: 5rem;
@@ -39,26 +43,34 @@
   font-size: 1.2rem;
 }
 
-.navbar_button1 {
-  color: #6e71cc;
-  font-size: 14px;
-  padding: 12px 8px;
-  border-radius: 8px;
-  outline: none;
-  background-color: lightblue;
+/* Responsive styles for screens with a max-width of 768px (tablet) */
+@media screen and (max-width: 768px) {
+  .navbar_middle > ul {
+    margin-right: 4rem;
+  }
 }
-.navbar_button2 {
-  color: #ed0331;
-  font-size: 14px;
-  padding: 12px 16px;
-  border-radius: 8px solid #ed0331;
-  background-color: #fff;
-}
+
+/* Responsive styles for screens with a max-width of 480px (mobile) */
 @media screen and (max-width: 480px) {
   .navbar_list {
     display: none;
   }
+
   .navbar_button {
     display: none;
+  }
+
+  .navbar_middle > ul {
+    margin-right: 0;
+    gap: 2rem; /* Adjust spacing for smaller screens */
+  }
+
+  .navbar_right {
+    flex-direction: column; /* Stack items vertically in mobile view */
+    align-items: flex-end;
+  }
+
+  .navbar_right button {
+    margin: 0.5rem 0;
   }
 }
