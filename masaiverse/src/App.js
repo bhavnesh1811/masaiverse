@@ -1,3 +1,4 @@
+
 import './App.css';
 import Banner from './Components/Banner';
 import Course from './Components/Course';
@@ -13,6 +14,8 @@ function App() {
       <News/>
     </div>
   );
-}
+
 
 export default App;
+
+
