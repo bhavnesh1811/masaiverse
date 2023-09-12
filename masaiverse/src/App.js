@@ -1,4 +1,3 @@
-import "./App.css";
 import Banner from "./Components/Banner";
 import Certification from "./Components/Certification";
 import Course from "./Components/Course";
