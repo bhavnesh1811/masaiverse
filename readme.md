@@ -19,7 +19,7 @@ Masai School is an online platform that offers coding and technology-related cou
 
 
 ### Team Members
-* Bhavesh
+* Bhavnesh
 * Shashi
 * Shivam
 * Sunil
