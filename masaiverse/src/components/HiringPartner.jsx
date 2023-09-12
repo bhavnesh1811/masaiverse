@@ -60,7 +60,7 @@ export default class AutoPlay extends Component {
     return (
       <div>
        <div className={styles.heading}>
-       <h2>Meet Our <span>4000+</span> Hiring Partners</h2>
+       <h2 style={{margin:"20px auto"}}>Meet Our <span>4000+</span> Hiring Partners</h2>
        </div>
         <div>
         <Slider {...settings}>
