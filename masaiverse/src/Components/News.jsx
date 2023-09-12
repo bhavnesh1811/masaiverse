@@ -1,10 +1,10 @@
-import { Box, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
+import { Box, Heading, Image, Stack, Text } from '@chakra-ui/react'
 
 const News = () => {
   return (
     <Stack m={{md:"25px",base:"15px"}}>
-        <Heading size='lg' fontSize={{md:"40px",base:"20px"}}>Masai In <span style={{color:"red"}}>News</span></Heading>
+        <Heading size='lg' fontSize={{md:"40px",base:"20px"}} textAlign="center">Masai In <span style={{color:"red"}}>News</span></Heading>
         <Stack display="flex" width="90%" margin="auto" flexDirection={{md:"row",base:"column"}}>
             <Box boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px" margin="10px">
                 <Image src='https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Article_Prateek_Shukla_Gen_AI_92324e2d6b.jpeg' alt='img1' height="250px" width={"600px"} />

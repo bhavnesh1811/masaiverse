@@ -4,9 +4,9 @@ import { Box, Button, Heading, Image, Stack, Text, VStack } from '@chakra-ui/rea
 
 const Course = () => {
   return (
-    <Stack mt={{base:"145px"}}>
-        <Heading size='lg' fontSize={{md:"50px",base:"25px"}}>Our Courses</Heading>
-        <Heading  as='h2' size='xl' fontSize={{base:"20px"}} margin={{md:"10px",base:"5px"}}>Practice-Based Learning Tracks, <span style={{fontWeight:"bold",color:"red"}}>Supercharged By A.I.</span> </Heading>
+    <Stack mt={{md:"35px",base:"145px"}}>
+        <Heading size='lg' fontSize={{md:"50px",base:"25px"}} textAlign="center">Our Courses</Heading>
+        <Heading  as='h2' size='xl' fontSize={{base:"20px"}} margin={{md:"10px",base:"5px"}} textAlign="center">Practice-Based Learning Tracks, <span style={{fontWeight:"bold",color:"red"}}>Supercharged By A.I.</span> </Heading>
 
         <Box width={{md:"70%",base:"90%"}} margin="auto" display='flex' flexDirection={{md:"row",base:"column"}} justifyContent="space-around">
             <VStack width={{md:"35%",base:"100%"}} borderRadius="20px" paddingBottom="10px"   boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px" alignItems="left" margin={{base:"10px 0px"}}>
