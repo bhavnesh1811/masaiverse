@@ -69,13 +69,13 @@
     border: 1px solid;
     padding: 5%;
     font-size: 2vh;
-    margin: 0 2% 0 2%;
+    margin: 0 5% 0 5%;
     margin-bottom: 50px;
     border-radius: 20px;
   }
   .container {
     display: block;
-    margin: 0 2% 0 2%;
+    margin: 0 5% 0 5%;
     column-gap: 15%;
     height: 600px;
     overflow: overlay;
@@ -86,6 +86,7 @@
     border-radius: 20px;
     padding: 10%;
     margin-bottom: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   .right_container {

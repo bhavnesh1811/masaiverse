@@ -51,8 +51,8 @@ export default class AutoPlay extends Component {
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToShow: 3,
+            slidesToScroll: 3
           }
         }
       ]
