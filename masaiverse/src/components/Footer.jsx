@@ -37,7 +37,7 @@ const Footer = () => {
           alignItems={"center"}
           fontSize={{sm:"16px",md:"20px",lg:"20px"}}
         >
-          <Text>Follow us:-</Text>
+          <Text fontSize={{base:"12px",sm:"16px",md:"20px",lg:"20px"}}>Follow us:-</Text>
 
           <AiOutlineTwitter />
 
@@ -170,6 +170,7 @@ const Footer = () => {
                 textAlign={"center"}
                 w={"80%"}
                 m={"20px auto"}
+                fontSize={{base:"12px",md:"16px"}}
               >
                 Connect with a growing community of learners
               </Text>
@@ -192,14 +193,14 @@ const Footer = () => {
         flexDirection={{base:"column",md:"row"}}
       >
         <Box>
-          <Text>© 2023 by Masai School | A Nolan Edutech Pvt Ltd Venture</Text>
+          <Text fontSize={{base:"12px",md:"18px"}}>© 2023 by Masai School | A Nolan Edutech Pvt Ltd Venture</Text>
         </Box>
-        <Flex fontSize={"12px"} flexDirection={{base:"column",md:"row"}}>
+        <Flex fontSize={{base:"12px",md:"16px"}} flexDirection={{base:"column",md:"row"}}>
           <Text as="a" href={"#"} textDecoration={"underline"}>
             Privacy Policies
           </Text>
-          <Text p={"0px 5px"}>&</Text>
-          <Text as="a" href={"#"} textDecoration={"underline"}>
+          <Text p={"0px 5px"} fontSize={{base:"12px",md:"16px"}}>&</Text>
+          <Text fontSize={{base:"12px",md:"16px"}} as="a" href={"#"} textDecoration={"underline"}>
             Terms & Conditions
           </Text>
         </Flex>
