@@ -8,8 +8,8 @@ const Course = () => {
         <Heading size='lg' fontSize={{md:"50px",base:"25px"}} textAlign="center">Our Courses</Heading>
         <Heading  as='h2' size='xl' fontSize={{base:"20px"}} margin={{md:"10px",base:"5px"}} textAlign="center">Practice-Based Learning Tracks, <span style={{fontWeight:"bold",color:"red"}}>Supercharged By A.I.</span> </Heading>
 
-        <Box width={{md:"70%",base:"90%"}} margin="auto" display='flex' flexDirection={{md:"row",base:"column"}} justifyContent="space-around">
-            <VStack width={{md:"35%",base:"100%"}} borderRadius="20px" paddingBottom="10px"   boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px" alignItems="left" margin={{base:"10px 0px"}}>
+        <Box width={{lg:"70%",md:"90%",base:"90%"}} margin="auto" display='flex' flexDirection={{md:"row",base:"column"}} justifyContent="space-around">
+            <VStack width={{lg:"35%",md:"45%",base:"100%"}} borderRadius="20px" paddingBottom="10px"   boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px" alignItems="left" margin={{base:"10px 0px"}}>
                 <Box backgroundColor="#d9abff" width="100%" height="200px" borderTopLeftRadius ="20px" borderTopRightRadius="20px">
                     <Image src='https://masai-website-images.s3.ap-south-1.amazonaws.com/full_stack1_329d6b5595.png' alt='image' display="block" margin="auto" width="50%" height="80%" />
                 </Box>
@@ -38,7 +38,7 @@ const Course = () => {
                 </Box>
             </VStack>
 
-            <VStack width={{md:"35%",base:"100%"}} borderRadius="20px" paddingBottom="10px" boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px" alignItems="left" margin={{base:"10px 0px"}} >
+            <VStack width={{lg:"35%",md:"45%",base:"100%"}} borderRadius="20px" paddingBottom="10px" boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px" alignItems="left" margin={{base:"10px 0px"}} >
                 <Box backgroundColor="#ffc27f" width="100%" height="200px" borderTopLeftRadius ="20px" borderTopRightRadius="20px">
                     <Image src='https://masai-website-images.s3.ap-south-1.amazonaws.com/backend_ea129d404e.png' alt='image' width="50%" display="block" margin="auto"  height="80%" />
                 </Box>
