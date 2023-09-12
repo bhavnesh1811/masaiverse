@@ -9,6 +9,7 @@ import HiringPartner from "./Components/HiringPartner";
 import Outcome from "./Components/Outcome";
 import ElevateCarrier from "./Components/ElevateCarrier";
 import Curriculum from "./Components/Curriculum";
+import Carousel from "./Components/Carousel";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Outcome />
       <Course />
       <Curriculum />
+      <Carousel />
       <Certification />
       <ElevateCarrier />
       <HiringPartner />
