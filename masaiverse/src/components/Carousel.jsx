@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Box, Button, Flex, useMediaQuery } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Image,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
@@ -49,57 +56,82 @@ const Carousel = () => {
   }, []);
 
   return (
-    <Box position="relative" overflow="hidden">
-      <Flex overflow="hidden">
-        <AnimatePresence initial={false} custom={currentIndex}>
-          {photos
-            .slice(currentIndex, currentIndex + numVisiblePhotos)
-            .map((photo, index) => (
-              <motion.img
-                key={index}
-                src={photo}
-                alt={`Photo ${index}`}
-                initial={{ x: index * 100 }}
-                animate={{ x: 0 }}
-                exit={{ x: -index * 100 }}
-                transition={{ type: "spring", stiffness: 100, damping: 10 }}
-                style={{
-                  flex: `0 0 ${100 / numVisiblePhotos}%`,
-                  minWidth: `${100 / numVisiblePhotos}%`,
-                  height: "250px",
-                }}
-              />
-            ))}
-        </AnimatePresence>
+    <Box>
+      <Flex flexDirection={"column"} gap={"10px"} m={"auto"}>
+        <Heading>Be A Part Of Our Thriving</Heading>
+        <Heading>
+          <span
+            style={{ color: "red", position: "relative" }}
+          >
+            Tech Community.
+            <Image
+              src="https://www.masaischool.com/images/new-homepage/yellow-vector.svg"
+              alt="https://www.masaischool.com/images/new-homepage/yellow-vector.svg"
+              maxWidth={{base:"80%",md:"60%"}}
+              margin={"10px auto"}
+            />
+          </span>
+        </Heading>
       </Flex>
+      <Box position="relative" overflow="hidden">
+        <Flex overflow="hidden">
+          <AnimatePresence initial={false} custom={currentIndex}>
+            {photos
+              .slice(currentIndex, currentIndex + numVisiblePhotos)
+              .map((photo, index) => (
+                <motion.img
+                  key={index}
+                  src={photo}
+                  alt={`Photo ${index}`}
+                  initial={{ x: index * 100 }}
+                  animate={{ x: -20 }}
+                  exit={{ x: -index * 100 }}
+                  transition={{ type: "spring", stiffness: 100, damping: 10 }}
+                  style={{
+                    flex: `0 0 ${100 / numVisiblePhotos}%`,
+                    minWidth: `${100 / numVisiblePhotos}%`,
+                    height: "175px",
+                  }}
+                />
+              ))}
+          </AnimatePresence>
+        </Flex>
 
-      <Flex mt={2} justifyContent={"center"} flexDirection={{base:"column-reverse", md:"row"}} m={{base:"10% auto",sm:"3% auto"}} align="center" gap={"20px"}>
-        <Box p={{base:"10% auto",md:"0% 25%",lg:"0% 32%"}}>
-          <Button colorScheme="red">Join Our Community</Button>
-        </Box>
-        <Box>
-          <Button
-            p="1px"
-            color="red"
-            border="1px solid red"
-            borderRadius="12px"
-            onClick={prevPhoto}
-            mr={2}
-          >
-            <AiOutlineLeft />
-          </Button>
-          <Button
-            p="1px"
-            color="red"
-            border="1px solid red"
-            borderRadius="12px"
-            onClick={nextPhoto}
-            ml={2}
-          >
-            <AiOutlineRight />
-          </Button>
-        </Box>
-      </Flex>
+        <Flex
+          mt={2}
+          justifyContent={"center"}
+          flexDirection={{ base: "column-reverse", md: "row" }}
+          m={{ base: "10% auto", sm: "3% auto" }}
+          align="center"
+          gap={"20px"}
+        >
+          <Box p={{ base: "10% auto", md: "0% 25%", lg: "0% 32%" }}>
+            <Button colorScheme="red">Join Our Community</Button>
+          </Box>
+          <Box>
+            <Button
+              p="1px"
+              color="red"
+              border="1px solid red"
+              borderRadius="12px"
+              onClick={prevPhoto}
+              mr={2}
+            >
+              <AiOutlineLeft />
+            </Button>
+            <Button
+              p="1px"
+              color="red"
+              border="1px solid red"
+              borderRadius="12px"
+              onClick={nextPhoto}
+              ml={2}
+            >
+              <AiOutlineRight />
+            </Button>
+          </Box>
+        </Flex>
+      </Box>
     </Box>
   );
 };
