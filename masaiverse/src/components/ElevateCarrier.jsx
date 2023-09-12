@@ -22,8 +22,7 @@ const ElevateCarrier = () => {
       </div>
       <div className={styles.right_container}>
         <iframe
-          width="600"
-          height="350"
+          
           src="https://www.youtube.com/embed/Ji0ICdxTdqc"
           title="No Matter Your Background, Get Your Dream Career | Skilled By Masai"
           frameborder="0"
