@@ -16,8 +16,7 @@ Masai School is an online platform that offers coding and technology-related cou
 5. Flexible Learning
 6. Supportive Community
 #
-### Masai School Screenshot
-#
+
 
 ### Team Members
 * Bhavesh
