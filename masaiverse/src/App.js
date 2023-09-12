@@ -1,3 +1,4 @@
+import Outcomes from "./Components/Outcomes/Outcomes";
 import Banner from "./Components/Banner";
 import Certification from "./Components/Certification";
 import Course from "./Components/Course";
@@ -10,12 +11,14 @@ import Curriculum from "./Components/Curriculum";
 import Carousel from "./Components/Carousel";
 import Navbar from "./Components/Navbar/Navbar";
 
+
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Banner />
       <Outcome />
+      <Outcomes/>
       <Course />
       <Curriculum />
       <Carousel />
@@ -27,4 +30,9 @@ function App() {
     </div>
   );
 }
+
+
+     
+
+
 export default App;

@@ -58,8 +58,8 @@ const Carousel = () => {
   return (
     <Box>
       <Flex flexDirection={"column"} gap={"10px"} m={"auto"}>
-        <Heading>Be A Part Of Our Thriving</Heading>
-        <Heading>
+        <Heading textAlign="center">Be A Part Of Our Thriving</Heading>
+        <Heading textAlign="center">
           <span
             style={{ color: "red", position: "relative" }}
           >
