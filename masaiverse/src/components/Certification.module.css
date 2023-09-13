@@ -1,11 +1,13 @@
 
-
 .container{
     display: flex;
-    margin: 0 10% 0 10%;
+    margin: 0% 10%;
     gap: 5%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    padding: 1%;
+    padding: 3%;
+    background-color: #F2F6FF;
+    max-height: 800px;
+    margin-bottom: 30px;
 }
 h1{
     font-size: 3.5vh;
@@ -15,8 +17,23 @@ h1>span{
     color: red;
 }
 
+.left_div{
+    width: 45%;
+    margin-right: 3%;
+}
+.right_div{
+    width: 50%;
+}
+
 .left_div>img{
     width: 600px;
+}
+
+.right_div>h1{
+    font-size: 14px;
+}
+.right_div>p{
+    font-size: 16px;
 }
 
 p{
@@ -24,14 +41,26 @@ p{
 }
 
 
-@media screen and (max-width:750px) {
+@media screen and (width<=1000px) {
     .container{
         display: block;
-        margin: 0 2% 0 2%;
-        gap: 5%;
+        margin: 0% 5%;
+        padding:"3% 2%";
+    }
+    .left_div{
+        width: 90%;
+    }
+    .right_div{
+        width: 90%;
+        margin:20px auto;
     }
 
     .left_div>img{
         width: 100%;
+        margin:20px 6%;
+    }
+
+    .right_div>p{
+        font-size: 12px;
     }
 }
